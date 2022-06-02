@@ -1,0 +1,2 @@
+C:/msys64/mingw64/bin/ar.exe qc libSimpleGL.a CMakeFiles/SimpleGL.dir/src/BufferObject.cpp.obj CMakeFiles/SimpleGL.dir/src/SGLEngine.cpp.obj CMakeFiles/SimpleGL.dir/src/SGLRect.cpp.obj CMakeFiles/SimpleGL.dir/src/ShaderManager.cpp.obj CMakeFiles/SimpleGL.dir/src/ShaderProgram.cpp.obj CMakeFiles/SimpleGL.dir/src/Triangle.cpp.obj CMakeFiles/SimpleGL.dir/src/VertexArray.cpp.obj
+C:/msys64/mingw64/bin/ranlib.exe libSimpleGL.a

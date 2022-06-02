@@ -1,0 +1,1 @@
+ -lopengl32 ../dep/SimpleGL/libSimpleGL.a ../dep/IMGUI/libimgui.a ../dep/IMPLOT/libimplot.a ../dep/GLAD/libglad.a -lglfw3 ../dep/IMGUI/libimgui.a -lopengl32 ../dep/GLAD/libglad.a -lglfw3 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

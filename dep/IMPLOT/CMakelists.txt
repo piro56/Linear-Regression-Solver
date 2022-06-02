@@ -1,0 +1,13 @@
+project(implot)
+file (GLOB implot_src "*.cpp")
+add_library(${PROJECT_NAME} ${implot_src})
+
+include_directories(../IMGUI)
+
+target_include_directories(${PROJECT_NAME} 
+    PUBLIC .
+)
+
+target_link_libraries(${PROJECT_NAME} 
+    PUBLIC imgui
+)
