@@ -15,6 +15,11 @@
   "file": "C:/Users/epicp/Documents/Programming/Linear Regression/src/LinReg.cpp"
 },
 {
+  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/src",
+  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles/LinReg.dir/DataManager.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp\"",
+  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp"
+},
+{
   "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
   "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/BufferObject.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/BufferObject.cpp\"",
   "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/BufferObject.cpp"

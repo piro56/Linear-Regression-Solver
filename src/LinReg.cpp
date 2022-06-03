@@ -56,6 +56,9 @@ void LinReg::displayGUI()
         ImGui::Begin("Linear Regression");
         fileButton = ImGui::Button("Open Data");
         ImGui::End();
+        if (displayDataWindow) {
+            drawDataWindow();
+        }
     }
     ImGui::Render();
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -71,18 +74,80 @@ void LinReg::postDraw()
 {
     if (fileButton)
     {
+        if (displayDataWindow) {
+            // Reset datamanager and GUI state
+            dataManager.reset();
+            dependentVariableSelected = false;
+            int depVarSelection = 0;
+            columnSelected = false;
+            selectedData = false;
+            dataLoaded = false;
+        }
         std::string fPath;
         std::string fSelected;
         bool fileOpened = openFile(fPath, fSelected);
         if (fileOpened)
         {
-            std::cout << "Opened: " << fPath << std::endl;
+            bool loadedCols = dataManager.loadColumns(fPath);
+            if (loadedCols) {
+                this->displayDataWindow = true;
+            }
         }
     }
 
     glfwSwapBuffers(window);
     glfwPollEvents();
 }
+
+void LinReg::drawDataWindow() {
+    ImGui::Begin("Data");
+
+    // Prompt for Dependent Variable
+    if (!dependentVariableSelected) 
+    {
+        selectedData = false;
+        ImGui::Text("Select Dependent Variable");
+        if (ImGui::BeginListBox(""))
+        {
+            for (int i = 0; i < dataManager.getTotalCols(); i++) 
+            {
+                const bool is_selected = (depVarSelection == i);    // if this is selected
+                if (ImGui::Selectable(dataManager.cols[i].c_str(), is_selected))
+                    depVarSelection = i;
+                if (is_selected)
+                    ImGui::SetItemDefaultFocus();
+            }
+            ImGui::EndListBox();
+        }
+        selectedData = ImGui::Button("Done");
+        dependentVariableSelected = selectedData;
+        dataManager.dependentCol = depVarSelection;
+    }
+    // Enable/Disable Columns
+    else if (!columnSelected) {
+        selectedData = false;
+        ImGui::Text("Select Independent Variables (numerical data)");
+        if (ImGui::BeginTable("Enabled Columns", 5)) {
+            for (int i = 0; i < dataManager.getTotalCols(); i++) {
+                if (i == depVarSelection) continue;
+                ImGui::TableNextColumn();
+                ImGui::Checkbox(dataManager.cols[i].c_str(), &dataManager.enabledCols[i]);
+            }
+            ImGui::EndTable();
+            selectedData = ImGui::Button("Done");
+            columnSelected = selectedData;
+            if (selectedData) {
+                // Load in CSV now
+                if (dataManager.loadCSV()) {
+                    dataLoaded = true;
+                }
+            }
+        }
+    }
+
+    ImGui::End();
+}
+
 
 int LR_process_input(GLFWwindow *window)
 {

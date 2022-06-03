@@ -1,6 +1,6 @@
 src/CMakeFiles/LinReg.dir/LinReg.cpp.obj: \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/LinReg.cpp \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/src/LinReg.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/LinReg.hpp \
  C:/msys64/mingw64/include/c++/10.3.0/iostream \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -378,7 +378,8 @@ src/CMakeFiles/LinReg.dir/LinReg.cpp.obj: \
  C:/msys64/mingw64/include/c++/10.3.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/10.3.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/10.3.0/bits/vector.tcc \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/src/WindowFuncs.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/DataManager.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/WindowFuncs.hpp \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/Windows.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/shobjidl.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/docobj.h \

@@ -1,6 +1,6 @@
 src/CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj: \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/WindowFuncs.cpp \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/src/WindowFuncs.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/WindowFuncs.hpp \
  C:/msys64/mingw64/include/c++/10.3.0/string \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/os_defines.h \

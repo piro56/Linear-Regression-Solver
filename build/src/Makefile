@@ -174,6 +174,30 @@ copy_assets/fast:
 	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/copy_assets.dir/build.make src/CMakeFiles/copy_assets.dir/build
 .PHONY : copy_assets/fast
 
+DataManager.obj: DataManager.cpp.obj
+.PHONY : DataManager.obj
+
+# target to build an object file
+DataManager.cpp.obj:
+	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/DataManager.cpp.obj
+.PHONY : DataManager.cpp.obj
+
+DataManager.i: DataManager.cpp.i
+.PHONY : DataManager.i
+
+# target to preprocess a source file
+DataManager.cpp.i:
+	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/DataManager.cpp.i
+.PHONY : DataManager.cpp.i
+
+DataManager.s: DataManager.cpp.s
+.PHONY : DataManager.s
+
+# target to generate assembly for a file
+DataManager.cpp.s:
+	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/DataManager.cpp.s
+.PHONY : DataManager.cpp.s
+
 LinReg.obj: LinReg.cpp.obj
 .PHONY : LinReg.obj
 
@@ -259,6 +283,9 @@ help:
 	@echo "... test"
 	@echo "... copy_assets"
 	@echo "... LinReg"
+	@echo "... DataManager.obj"
+	@echo "... DataManager.i"
+	@echo "... DataManager.s"
 	@echo "... LinReg.obj"
 	@echo "... LinReg.i"
 	@echo "... LinReg.s"

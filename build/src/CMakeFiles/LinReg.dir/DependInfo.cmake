@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp" "src/CMakeFiles/LinReg.dir/DataManager.cpp.obj" "gcc" "src/CMakeFiles/LinReg.dir/DataManager.cpp.obj.d"
   "C:/Users/epicp/Documents/Programming/Linear Regression/src/LinReg.cpp" "src/CMakeFiles/LinReg.dir/LinReg.cpp.obj" "gcc" "src/CMakeFiles/LinReg.dir/LinReg.cpp.obj.d"
   "C:/Users/epicp/Documents/Programming/Linear Regression/src/WindowFuncs.cpp" "src/CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj" "gcc" "src/CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj.d"
   "C:/Users/epicp/Documents/Programming/Linear Regression/src/main.cpp" "src/CMakeFiles/LinReg.dir/main.cpp.obj" "gcc" "src/CMakeFiles/LinReg.dir/main.cpp.obj.d"

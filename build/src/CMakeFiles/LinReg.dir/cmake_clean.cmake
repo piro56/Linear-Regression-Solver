@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LinReg.dir/DataManager.cpp.obj"
+  "CMakeFiles/LinReg.dir/DataManager.cpp.obj.d"
   "CMakeFiles/LinReg.dir/LinReg.cpp.obj"
   "CMakeFiles/LinReg.dir/LinReg.cpp.obj.d"
   "CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj"

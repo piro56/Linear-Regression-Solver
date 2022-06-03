@@ -114,11 +114,27 @@ src/CMakeFiles/LinReg.dir/LinReg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinReg.dir/LinReg.cpp.s"
 	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/epicp/Documents/Programming/Linear Regression/src/LinReg.cpp" -o CMakeFiles/LinReg.dir/LinReg.cpp.s
 
+src/CMakeFiles/LinReg.dir/DataManager.cpp.obj: src/CMakeFiles/LinReg.dir/flags.make
+src/CMakeFiles/LinReg.dir/DataManager.cpp.obj: src/CMakeFiles/LinReg.dir/includes_CXX.rsp
+src/CMakeFiles/LinReg.dir/DataManager.cpp.obj: ../src/DataManager.cpp
+src/CMakeFiles/LinReg.dir/DataManager.cpp.obj: src/CMakeFiles/LinReg.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LinReg.dir/DataManager.cpp.obj"
+	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LinReg.dir/DataManager.cpp.obj -MF CMakeFiles/LinReg.dir/DataManager.cpp.obj.d -o CMakeFiles/LinReg.dir/DataManager.cpp.obj -c "C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp"
+
+src/CMakeFiles/LinReg.dir/DataManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinReg.dir/DataManager.cpp.i"
+	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp" > CMakeFiles/LinReg.dir/DataManager.cpp.i
+
+src/CMakeFiles/LinReg.dir/DataManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinReg.dir/DataManager.cpp.s"
+	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp" -o CMakeFiles/LinReg.dir/DataManager.cpp.s
+
 # Object files for target LinReg
 LinReg_OBJECTS = \
 "CMakeFiles/LinReg.dir/main.cpp.obj" \
 "CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj" \
-"CMakeFiles/LinReg.dir/LinReg.cpp.obj"
+"CMakeFiles/LinReg.dir/LinReg.cpp.obj" \
+"CMakeFiles/LinReg.dir/DataManager.cpp.obj"
 
 # External object files for target LinReg
 LinReg_EXTERNAL_OBJECTS =
@@ -126,6 +142,7 @@ LinReg_EXTERNAL_OBJECTS =
 src/LinReg.exe: src/CMakeFiles/LinReg.dir/main.cpp.obj
 src/LinReg.exe: src/CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj
 src/LinReg.exe: src/CMakeFiles/LinReg.dir/LinReg.cpp.obj
+src/LinReg.exe: src/CMakeFiles/LinReg.dir/DataManager.cpp.obj
 src/LinReg.exe: src/CMakeFiles/LinReg.dir/build.make
 src/LinReg.exe: dep/SimpleGL/libSimpleGL.a
 src/LinReg.exe: dep/IMGUI/libimgui.a
@@ -135,7 +152,7 @@ src/LinReg.exe: dep/IMGUI/libimgui.a
 src/LinReg.exe: dep/GLAD/libglad.a
 src/LinReg.exe: src/CMakeFiles/LinReg.dir/linklibs.rsp
 src/LinReg.exe: src/CMakeFiles/LinReg.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LinReg.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LinReg.exe"
 	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && D:/C++/CMake/bin/cmake.exe -E rm -f CMakeFiles/LinReg.dir/objects.a
 	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && C:/msys64/mingw64/bin/ar.exe qc CMakeFiles/LinReg.dir/objects.a @CMakeFiles/LinReg.dir/objects1.rsp
 	cd "C:/Users/epicp/Documents/Programming/Linear Regression/build/src" && C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles/LinReg.dir/objects.a -Wl,--no-whole-archive -o LinReg.exe -Wl,--out-implib,libLinReg.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/LinReg.dir/linklibs.rsp

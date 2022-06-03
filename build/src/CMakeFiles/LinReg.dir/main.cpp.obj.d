@@ -386,9 +386,10 @@ src/CMakeFiles/LinReg.dir/main.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/winsvc.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/imm.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/src/LinReg.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/LinReg.hpp \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/IMPLOT/implot.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/src/WindowFuncs.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/DataManager.hpp \
+ C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/WindowFuncs.hpp \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/Windows.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/shobjidl.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/docobj.h \

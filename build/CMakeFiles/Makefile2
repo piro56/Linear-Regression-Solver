@@ -923,18 +923,18 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 
 # All Build rule for target.
 src/CMakeFiles/LinReg.dir/all: src/CMakeFiles/copy_assets.dir/all
-src/CMakeFiles/LinReg.dir/all: dep/SimpleGL/CMakeFiles/SimpleGL.dir/all
 src/CMakeFiles/LinReg.dir/all: dep/IMGUI/CMakeFiles/imgui.dir/all
-src/CMakeFiles/LinReg.dir/all: dep/GLAD/CMakeFiles/glad.dir/all
+src/CMakeFiles/LinReg.dir/all: dep/SimpleGL/CMakeFiles/SimpleGL.dir/all
 src/CMakeFiles/LinReg.dir/all: dep/IMPLOT/CMakeFiles/implot.dir/all
+src/CMakeFiles/LinReg.dir/all: dep/GLAD/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=1,2,3,4 "Built target LinReg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=1,2,3,4,5 "Built target LinReg"
 .PHONY : src/CMakeFiles/LinReg.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/LinReg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" 26
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/LinReg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" 0
 .PHONY : src/CMakeFiles/LinReg.dir/rule
@@ -981,7 +981,7 @@ src/CMakeFiles/copy_assets.dir/clean:
 dep/SimpleGL/CMakeFiles/SimpleGL.dir/all: dep/GLAD/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f dep/SimpleGL/CMakeFiles/SimpleGL.dir/build.make dep/SimpleGL/CMakeFiles/SimpleGL.dir/depend
 	$(MAKE) $(MAKESILENT) -f dep/SimpleGL/CMakeFiles/SimpleGL.dir/build.make dep/SimpleGL/CMakeFiles/SimpleGL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=5,6,7,8,9,10,11,12 "Built target SimpleGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=6,7,8,9,10,11,12,13 "Built target SimpleGL"
 .PHONY : dep/SimpleGL/CMakeFiles/SimpleGL.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1007,7 +1007,7 @@ dep/SimpleGL/CMakeFiles/SimpleGL.dir/clean:
 dep/IMGUI/CMakeFiles/imgui.dir/all: dep/GLAD/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f dep/IMGUI/CMakeFiles/imgui.dir/build.make dep/IMGUI/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f dep/IMGUI/CMakeFiles/imgui.dir/build.make dep/IMGUI/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=15,16,17,18,19,20,21,22 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=16,17,18,19,20,21,22,23 "Built target imgui"
 .PHONY : dep/IMGUI/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1034,7 +1034,7 @@ dep/IMPLOT/CMakeFiles/implot.dir/all: dep/IMGUI/CMakeFiles/imgui.dir/all
 dep/IMPLOT/CMakeFiles/implot.dir/all: dep/GLAD/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f dep/IMPLOT/CMakeFiles/implot.dir/build.make dep/IMPLOT/CMakeFiles/implot.dir/depend
 	$(MAKE) $(MAKESILENT) -f dep/IMPLOT/CMakeFiles/implot.dir/build.make dep/IMPLOT/CMakeFiles/implot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=23,24,25,26 "Built target implot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=24,25,26,27 "Built target implot"
 .PHONY : dep/IMPLOT/CMakeFiles/implot.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1060,7 +1060,7 @@ dep/IMPLOT/CMakeFiles/implot.dir/clean:
 dep/GLAD/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f dep/GLAD/CMakeFiles/glad.dir/build.make dep/GLAD/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f dep/GLAD/CMakeFiles/glad.dir/build.make dep/GLAD/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=13,14 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=14,15 "Built target glad"
 .PHONY : dep/GLAD/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
