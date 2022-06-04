@@ -54,6 +54,7 @@ bool DataManager::loadColumns(std::string filePath) {
 void DataManager::reset() {
     this->cols.clear();
     this->data.clear();
+    this->dependentData.clear();
     delete[] enabledCols;
     this->enabledCols = nullptr;
 }

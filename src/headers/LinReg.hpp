@@ -37,6 +37,8 @@ public:
     bool dataLoaded = false;
     std::vector<char> plottedCols;
     std::vector<float> thetas;
+    std::vector<float> plottedPoints;
+    bool lineCalculated = false;
     //bool* plottedCols = nullptr;
 
 

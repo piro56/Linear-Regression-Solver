@@ -83,6 +83,8 @@ void LinReg::postDraw()
             columnSelected = false;
             selectedData = false;
             dataLoaded = false;
+            lineCalculated = false;
+            this->plottedPoints.clear();
         }
         std::string fPath;
         std::string fSelected;
@@ -158,6 +160,7 @@ void LinReg::drawDataWindow() {
             }
             ImGui::EndTable();
         }
+
         for (int i = 0; i < dataManager.cols.size(); i++) {
             if (!plottedCols[i]) {
                 continue;
@@ -173,13 +176,16 @@ void LinReg::drawDataWindow() {
                     &dataManager.dependentData[0],
                     dataManager.dependentData.size());
                 ImPlot::PopStyleVar();
+                if (lineCalculated){
+                    ImPlot::PlotLine("Prediction", &dataManager.data[i][0], &plottedPoints[0], dataManager.dependentData.size());
+                }
                 ImPlot::EndPlot();  
             }
         }
         // Linear Regression Button
         bool linRegButton = ImGui::Button("Start Regression");
         if (linRegButton) {
-            basicLinearRegression(0.0001);
+            basicLinearRegression(0.001);
         }
 
 
@@ -192,7 +198,8 @@ void LinReg::drawDataWindow() {
 float LinReg::basicMeanSqError() {
     float error = 0;
     for (int i = 0; i < dataManager.data[0].size(); i++) {
-        error += pow(basicHthetaX(i) - dataManager.dependentData[i], 2);
+        float hx = basicHthetaX(i);
+        error += pow(hx - dataManager.dependentData[i], 2);
     }
     return (error / (2 * dataManager.data[0].size()));
 }
@@ -201,7 +208,7 @@ float LinReg::basicMeanSqError() {
 float LinReg::basicHthetaX(float xIndex) {
     float prediction = thetas[0];       // begin with T0
     for (int i = 0; i < dataManager.cols.size(); i++) {   // Calculate [T1x,Tnx]
-        prediction += thetas[i+1] * dataManager.cols[i][xIndex];
+        prediction += thetas[i+1] * dataManager.data[i][xIndex];
     }
     return prediction;
 }
@@ -224,22 +231,31 @@ void LinReg::basicLinearRegression(float a_size) {
         for (int i = 1; i < thetas.size(); i++) {   // every feature
             cost = 0;
             for (int j = 0; j < m; j++) {           // each datapoint
-                cost += (basicHthetaX(j) - dataManager.dependentData[j]) * dataManager.cols[i][j];
+                cost += (basicHthetaX(j) - dataManager.dependentData[j]) * dataManager.data[i-1][j];
             }
             temps[i] = thetas[i] - (a_size / m * cost);
         }
         thetas = temps;
         float nErr = basicMeanSqError();
-        std::cout << "Error: " << nErr << "with " << std::endl;
-        for (int i = 0; i < thetas.size(); i++) {
-            std::cout << "T" << i << ": " << thetas[i] << std::endl;
-        }
-        if (nErr >= error + 10) {
+        // std::cout << "ERROR: " << nErr << "with " << std::endl;
+        // for (int i = 0; i < thetas.size(); i++) {
+        //     std::cout << "T" << i << ": " << thetas[i] << std::endl;
+        // }
+        if (nErr >= error) {
+            std::cout << "FINAL ERROR: " << nErr << "with " << std::endl;
+            for (int i = 0; i < thetas.size(); i++) {
+                std::cout << "T" << i << ": " << thetas[i] << std::endl;
+            }
             break;
         }
+        error = nErr;
     }
+    // save plotted points now
 
-
+    for (int i = 0; i < m; i++) {
+        plottedPoints.push_back(basicHthetaX(i));
+    }
+    lineCalculated = true;
 }
 
 

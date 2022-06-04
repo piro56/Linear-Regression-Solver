@@ -922,11 +922,11 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target src/CMakeFiles/LinReg.dir
 
 # All Build rule for target.
+src/CMakeFiles/LinReg.dir/all: dep/SimpleGL/CMakeFiles/SimpleGL.dir/all
 src/CMakeFiles/LinReg.dir/all: src/CMakeFiles/copy_assets.dir/all
 src/CMakeFiles/LinReg.dir/all: dep/IMGUI/CMakeFiles/imgui.dir/all
-src/CMakeFiles/LinReg.dir/all: dep/SimpleGL/CMakeFiles/SimpleGL.dir/all
-src/CMakeFiles/LinReg.dir/all: dep/IMPLOT/CMakeFiles/implot.dir/all
 src/CMakeFiles/LinReg.dir/all: dep/GLAD/CMakeFiles/glad.dir/all
+src/CMakeFiles/LinReg.dir/all: dep/IMPLOT/CMakeFiles/implot.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/LinReg.dir/build.make src/CMakeFiles/LinReg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles" --progress-num=1,2,3,4,5 "Built target LinReg"
