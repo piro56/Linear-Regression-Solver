@@ -38,6 +38,7 @@ public:
     std::vector<char> plottedCols;
     std::vector<float> thetas;
     std::vector<float> plottedPoints;
+    std::vector<float> outputX;
     bool lineCalculated = false;
     //bool* plottedCols = nullptr;
 

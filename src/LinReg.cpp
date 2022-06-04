@@ -182,6 +182,23 @@ void LinReg::drawDataWindow() {
                 ImPlot::EndPlot();  
             }
         }
+        // Plot 3rd Output Plot
+        if (lineCalculated) {
+            if (ImPlot::BeginPlot("Prediction Plot")) {
+                ImPlot::SetupAxes("Data Index",
+                    dataManager.dependentName.c_str(),
+                    ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
+                    ImPlotAxisFlags_RangeFit);
+                ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
+                ImPlot::PlotScatter(dataManager.dependentName.c_str(), 
+                    &outputX[0],
+                    &dataManager.dependentData[0],
+                    dataManager.dependentData.size());
+                ImPlot::PopStyleVar();
+                    ImPlot::PlotLine("Prediction", &outputX[0], &plottedPoints[0], dataManager.dependentData.size());
+                ImPlot::EndPlot();  
+            }
+        }
         // Linear Regression Button
         bool linRegButton = ImGui::Button("Start Regression");
         if (linRegButton) {
@@ -251,9 +268,10 @@ void LinReg::basicLinearRegression(float a_size) {
         error = nErr;
     }
     // save plotted points now
-
+    outputX.clear();
     for (int i = 0; i < m; i++) {
         plottedPoints.push_back(basicHthetaX(i));
+        outputX.push_back(i);
     }
     lineCalculated = true;
 }
