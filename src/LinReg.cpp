@@ -24,10 +24,6 @@ LinReg::~LinReg()
 {
     delete engine;
     engine = nullptr;
-    if (plottedCols != nullptr) {
-        plottedCols;
-        plottedCols = nullptr;
-    }
 }
 
 void LinReg::start()
@@ -104,6 +100,8 @@ void LinReg::postDraw()
     glfwPollEvents();
 }
 
+
+
 void LinReg::drawDataWindow() {
     ImGui::Begin("Data");
 
@@ -145,11 +143,7 @@ void LinReg::drawDataWindow() {
                 // Load in CSV now
                 if (dataManager.loadCSV()) {
                     dataLoaded = true;
-                    if (plottedCols != nullptr) {
-                        delete[] plottedCols;
-                    }
-                    plottedCols = new bool[dataManager.cols.size()];
-                    std::fill(plottedCols, plottedCols + dataManager.cols.size(), false);
+                    plottedCols.resize(dataManager.cols.size(), false); // plot enable data
                 }
             }
         }
@@ -160,7 +154,7 @@ void LinReg::drawDataWindow() {
         if (ImGui::BeginTable("Plot Cols", 5)) {
             for (int i = 0; i < dataManager.cols.size(); i++) {
                 ImGui::TableNextColumn();
-                ImGui::Checkbox(dataManager.cols[i].c_str(), plottedCols + i);
+                ImGui::Checkbox(dataManager.cols[i].c_str(), (bool*) &plottedCols[i]);
             }
             ImGui::EndTable();
         }
@@ -182,34 +176,70 @@ void LinReg::drawDataWindow() {
                 ImPlot::EndPlot();  
             }
         }
-
-
-        // // Create buttons for plot pages
-        // // Button will open a plot up w/ that var
-        // // Have a bool vector of whether or not plot open
-        // for (int i = 0; i < dataManager.data.size(); i++) {
-        //     if (ImPlot::BeginPlot(dataManager.cols[i].c_str(), ImVec2(-1,0))) {
-        //         ImPlot::SetupAxes(dataManager.cols[i].c_str(),
-        //             dataManager.dependentName.c_str(),
-        //             ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
-        //             ImPlotAxisFlags_RangeFit);
-
-        //         //ImPlot::SetupAxesLimits(0,1,0,1);
-        //         ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
-        //         ImPlot::PlotScatter(dataManager.cols[i].c_str(), 
-        //             &dataManager.data[i][0], 
-        //             &dataManager.dependentData[0],
-        //             dataManager.dependentData.size());
-        //         ImPlot::PopStyleVar();
-        //         ImPlot::EndPlot();  
-        //     }
-        // }
+        // Linear Regression Button
+        bool linRegButton = ImGui::Button("Start Regression");
+        if (linRegButton) {
+            basicLinearRegression(0.0001);
+        }
 
 
 
     }
 
     ImGui::End();
+}
+
+float LinReg::basicMeanSqError() {
+    float error = 0;
+    for (int i = 0; i < dataManager.data[0].size(); i++) {
+        error += pow(basicHthetaX(i) - dataManager.dependentData[i], 2);
+    }
+    return (error / (2 * dataManager.data[0].size()));
+}
+
+// Calculates H(x): T_0 + T_1x + T_2x + ... + T_nx
+float LinReg::basicHthetaX(float xIndex) {
+    float prediction = thetas[0];       // begin with T0
+    for (int i = 0; i < dataManager.cols.size(); i++) {   // Calculate [T1x,Tnx]
+        prediction += thetas[i+1] * dataManager.cols[i][xIndex];
+    }
+    return prediction;
+}
+void LinReg::basicLinearRegression(float a_size) {
+    thetas = std::vector<float>(dataManager.cols.size()+1, 0.0f);
+    std::vector<float> temps = std::vector<float>(dataManager.cols.size()+1, 0.0f);
+    int m = dataManager.data[0].size();
+    float error = std::numeric_limits<float>::infinity();
+    bool run = true;
+    while (run) 
+    {
+        // theta0:
+        float cost = 0;
+        for (int i = 0; i < m; i++) {
+            cost += basicHthetaX(i) - dataManager.dependentData[i]; // prediction - actual
+        }
+        temps[0] = thetas[0] - (a_size / m * cost);
+
+        // all other thetas
+        for (int i = 1; i < thetas.size(); i++) {   // every feature
+            cost = 0;
+            for (int j = 0; j < m; j++) {           // each datapoint
+                cost += (basicHthetaX(j) - dataManager.dependentData[j]) * dataManager.cols[i][j];
+            }
+            temps[i] = thetas[i] - (a_size / m * cost);
+        }
+        thetas = temps;
+        float nErr = basicMeanSqError();
+        std::cout << "Error: " << nErr << "with " << std::endl;
+        for (int i = 0; i < thetas.size(); i++) {
+            std::cout << "T" << i << ": " << thetas[i] << std::endl;
+        }
+        if (nErr >= error + 10) {
+            break;
+        }
+    }
+
+
 }
 
 

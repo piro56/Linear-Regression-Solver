@@ -298,6 +298,10 @@ src/CMakeFiles/LinReg.dir/LinReg.cpp.obj
  C:/msys64/mingw64/include/c++/10.3.0/array
  C:/msys64/mingw64/include/c++/10.3.0/utility
  C:/msys64/mingw64/include/c++/10.3.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/10.3.0/math.h
+ C:/msys64/mingw64/include/c++/10.3.0/cmath
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h
+ C:/msys64/mingw64/include/c++/10.3.0/limits
  C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui.h
  C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imconfig.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/float.h
@@ -1286,6 +1290,7 @@ src/CMakeFiles/LinReg.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/10.3.0/array
  C:/msys64/mingw64/include/c++/10.3.0/utility
  C:/msys64/mingw64/include/c++/10.3.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/10.3.0/math.h
  C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot.h
  C:/Users/epicp/Documents/Programming/Linear Regression/src/headers/DataManager.hpp
  C:/Users/epicp/Documents/Programming/Linear Regression/src/headers/WindowFuncs.hpp

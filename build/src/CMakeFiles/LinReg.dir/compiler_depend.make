@@ -296,6 +296,10 @@ src/CMakeFiles/LinReg.dir/LinReg.cpp.obj: ../src/LinReg.cpp \
   C:/msys64/mingw64/include/c++/10.3.0/array \
   C:/msys64/mingw64/include/c++/10.3.0/utility \
   C:/msys64/mingw64/include/c++/10.3.0/bits/stl_relops.h \
+  C:/msys64/mingw64/include/c++/10.3.0/math.h \
+  C:/msys64/mingw64/include/c++/10.3.0/cmath \
+  C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h \
+  C:/msys64/mingw64/include/c++/10.3.0/limits \
   ../dep/IMGUI/imgui.h \
   ../dep/IMGUI/imconfig.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/float.h \
@@ -1282,6 +1286,7 @@ src/CMakeFiles/LinReg.dir/main.cpp.obj: ../src/main.cpp \
   C:/msys64/mingw64/include/c++/10.3.0/array \
   C:/msys64/mingw64/include/c++/10.3.0/utility \
   C:/msys64/mingw64/include/c++/10.3.0/bits/stl_relops.h \
+  C:/msys64/mingw64/include/c++/10.3.0/math.h \
   ../dep/IMPLOT/implot.h \
   ../src/headers/DataManager.hpp \
   ../src/headers/WindowFuncs.hpp \
@@ -1372,6 +1377,8 @@ C:/msys64/mingw64/include/c++/10.3.0/ext/numeric_traits.h:
 C:/msys64/mingw64/include/c++/10.3.0/bits/stl_pair.h:
 
 C:/msys64/mingw64/include/c++/10.3.0/ext/new_allocator.h:
+
+C:/msys64/mingw64/include/c++/10.3.0/math.h:
 
 C:/msys64/mingw64/include/c++/10.3.0/bits/move.h:
 
@@ -1721,6 +1728,14 @@ C:/msys64/mingw64/include/c++/10.3.0/utility:
 
 C:/msys64/mingw64/include/c++/10.3.0/bits/stl_relops.h:
 
+C:/msys64/mingw64/include/c++/10.3.0/cmath:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/virtdisk.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h:
+
+C:/msys64/mingw64/include/c++/10.3.0/limits:
+
 ../dep/IMGUI/imgui.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/emmintrin.h:
@@ -2007,10 +2022,6 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/winnetwk.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/wnnc.h:
 
-C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/virtdisk.h:
-
 C:/msys64/mingw64/x86_64-w64-mingw32/include/dde.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/ddeml.h:
@@ -2094,10 +2105,6 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/sherrors.h:
 C:/msys64/mingw64/x86_64-w64-mingw32/include/commctrl.h:
 
 ../src/WindowFuncs.cpp:
-
-C:/msys64/mingw64/include/c++/10.3.0/cmath:
-
-C:/msys64/mingw64/include/c++/10.3.0/limits:
 
 C:/msys64/mingw64/include/c++/10.3.0/bits/uniform_int_dist.h:
 

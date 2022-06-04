@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <array>
+#include <math.h>
+#include <limits>
 
 #include <imgui.h>
 #include <imgui_impl_opengl3.h>
@@ -33,7 +35,10 @@ public:
     bool columnSelected = false;
     bool selectedData = false;
     bool dataLoaded = false;
-    bool* plottedCols = nullptr;
+    std::vector<char> plottedCols;
+    std::vector<float> thetas;
+    //bool* plottedCols = nullptr;
+
 
     /* Starts Draw Loop, essentially starts program */
     void start();
@@ -51,6 +56,10 @@ public:
     /* GUI Windows*/
 
     void drawDataWindow();
+
+    void basicLinearRegression(float a_size);
+    float basicHthetaX(float x);
+    float basicMeanSqError();
 
     /* Get singleton instance */
     static LinReg &getInstance()
