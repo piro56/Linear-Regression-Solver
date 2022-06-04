@@ -23,9 +23,11 @@ public:
     int dependentCol;
 
     std::vector<std::string> cols;
-private:
-    int totalCols = 0;
     std::vector<std::vector<float>> data;
     std::vector<float> dependentData;
+    std::string dependentName = "";
+private:
+    int totalCols = 0;
+
 
 };

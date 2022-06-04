@@ -63,11 +63,16 @@ bool DataManager::loadCSV() {
     csvfile.open(dataPath);
     std::string buffer;
     std::getline(csvfile, buffer);  // get first line
+    std::vector<std::string> newColNames;
 
     // Initialize vector w/ enabled columns
     for (int i = 0; i < totalCols; i++) {
         if (this->enabledCols[i]) {
             this->data.push_back(std::vector<float>());
+            newColNames.push_back(cols[i]);
+        }
+        if (this->dependentCol == i) {
+            dependentName = cols[i];
         }
     }
     while (csvfile) {
@@ -102,5 +107,6 @@ bool DataManager::loadCSV() {
         }
     }
     csvfile.close();
+    cols = newColNames;
     return true;
 }

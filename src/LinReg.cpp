@@ -23,6 +23,11 @@ LinReg::LinReg()
 LinReg::~LinReg()
 {
     delete engine;
+    engine = nullptr;
+    if (plottedCols != nullptr) {
+        plottedCols;
+        plottedCols = nullptr;
+    }
 }
 
 void LinReg::start()
@@ -140,9 +145,68 @@ void LinReg::drawDataWindow() {
                 // Load in CSV now
                 if (dataManager.loadCSV()) {
                     dataLoaded = true;
+                    if (plottedCols != nullptr) {
+                        delete[] plottedCols;
+                    }
+                    plottedCols = new bool[dataManager.cols.size()];
+                    std::fill(plottedCols, plottedCols + dataManager.cols.size(), false);
                 }
             }
         }
+    }
+    else if (dataLoaded) 
+    {
+        ImGui::Text("View Plots");
+        if (ImGui::BeginTable("Plot Cols", 5)) {
+            for (int i = 0; i < dataManager.cols.size(); i++) {
+                ImGui::TableNextColumn();
+                ImGui::Checkbox(dataManager.cols[i].c_str(), plottedCols + i);
+            }
+            ImGui::EndTable();
+        }
+        for (int i = 0; i < dataManager.cols.size(); i++) {
+            if (!plottedCols[i]) {
+                continue;
+            }
+            if (ImPlot::BeginPlot(dataManager.cols[i].c_str())) {
+                ImPlot::SetupAxes(dataManager.cols[i].c_str(),
+                    dataManager.dependentName.c_str(),
+                    ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
+                    ImPlotAxisFlags_RangeFit);
+                ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
+                ImPlot::PlotScatter(dataManager.cols[i].c_str(), 
+                    &dataManager.data[i][0], 
+                    &dataManager.dependentData[0],
+                    dataManager.dependentData.size());
+                ImPlot::PopStyleVar();
+                ImPlot::EndPlot();  
+            }
+        }
+
+
+        // // Create buttons for plot pages
+        // // Button will open a plot up w/ that var
+        // // Have a bool vector of whether or not plot open
+        // for (int i = 0; i < dataManager.data.size(); i++) {
+        //     if (ImPlot::BeginPlot(dataManager.cols[i].c_str(), ImVec2(-1,0))) {
+        //         ImPlot::SetupAxes(dataManager.cols[i].c_str(),
+        //             dataManager.dependentName.c_str(),
+        //             ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
+        //             ImPlotAxisFlags_RangeFit);
+
+        //         //ImPlot::SetupAxesLimits(0,1,0,1);
+        //         ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
+        //         ImPlot::PlotScatter(dataManager.cols[i].c_str(), 
+        //             &dataManager.data[i][0], 
+        //             &dataManager.dependentData[0],
+        //             dataManager.dependentData.size());
+        //         ImPlot::PopStyleVar();
+        //         ImPlot::EndPlot();  
+        //     }
+        // }
+
+
+
     }
 
     ImGui::End();

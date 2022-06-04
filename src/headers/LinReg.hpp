@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <array>
 
 #include <imgui.h>
 #include <imgui_impl_opengl3.h>
@@ -31,6 +33,7 @@ public:
     bool columnSelected = false;
     bool selectedData = false;
     bool dataLoaded = false;
+    bool* plottedCols = nullptr;
 
     /* Starts Draw Loop, essentially starts program */
     void start();

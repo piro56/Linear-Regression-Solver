@@ -387,6 +387,9 @@ src/CMakeFiles/LinReg.dir/main.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/imm.h \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/LinReg.hpp \
+ C:/msys64/mingw64/include/c++/10.3.0/array \
+ C:/msys64/mingw64/include/c++/10.3.0/utility \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/stl_relops.h \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/IMPLOT/implot.h \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/DataManager.hpp \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/WindowFuncs.hpp \
