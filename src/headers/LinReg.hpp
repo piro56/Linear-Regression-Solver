@@ -31,16 +31,18 @@ public:
     bool fileButton; // Pressed to load in data
     bool displayDataWindow = false;
     bool dependentVariableSelected = false;
-    int depVarSelection = 0;
-    bool columnSelected = false;
-    bool selectedData = false;
-    bool dataLoaded = false;
+    int depVarSelection = 0;            // Dependent Variable Selection
+    bool columnSelected = false;        // Indepedent Variables Selection
+    bool selectedData = false;          // If data has been selected
+    bool dataLoaded = false;            // If data has been loaded (after dataselection)
     std::vector<char> plottedCols;
     std::vector<float> thetas;
     std::vector<float> plottedPoints;
     std::vector<float> outputX;
     bool lineCalculated = false;
-    //bool* plottedCols = nullptr;
+    bool extraFeaturesCreated = false;
+    
+    float leastSquaresError = -1;
 
 
     /* Starts Draw Loop, essentially starts program */
@@ -58,8 +60,23 @@ public:
 
     /* GUI Windows*/
 
+    // Main working window
     void drawDataWindow();
+    // Prompts which dependent variable to use
+    void drawDepVarPrompt();
+    // Prompts which features to include (user must select numerical only)
+    void drawIndVarPrompt();
+    // When data is loaded, GUI allows regression & viewing plots    
+    void drawPostDataLoad();
 
+    // Draws scatter points and line. If lineData is null, does not draw line //
+    void drawPlot(const char* title, const char* xAxis, 
+    const char* yAxis, const char* scatterName, 
+    const float* xData, const float* yData, const char* lineName, 
+    const float* lineData, int entries);
+
+    void resetData();
+    /* Calculations */
     void basicLinearRegression(float a_size);
     float basicHthetaX(float x);
     float basicMeanSqError();

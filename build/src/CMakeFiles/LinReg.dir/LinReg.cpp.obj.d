@@ -386,6 +386,23 @@ src/CMakeFiles/LinReg.dir/LinReg.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/imm.h \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/DataManager.hpp \
+ C:/msys64/mingw64/include/c++/10.3.0/algorithm \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/10.3.0/unordered_map \
+ C:/msys64/mingw64/include/c++/10.3.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/hashtable.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/hashtable_policy.h \
+ C:/msys64/mingw64/include/c++/10.3.0/tuple \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/uses_allocator.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/invoke.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/unordered_map.h \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/erase_if.h \
+ C:/msys64/mingw64/include/c++/10.3.0/numeric \
+ C:/msys64/mingw64/include/c++/10.3.0/bits/stl_numeric.h \
  C:/Users/epicp/Documents/Programming/Linear\ Regression/src/headers/WindowFuncs.hpp \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/Windows.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/shobjidl.h \

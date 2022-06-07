@@ -76,15 +76,7 @@ void LinReg::postDraw()
     if (fileButton)
     {
         if (displayDataWindow) {
-            // Reset datamanager and GUI state
-            dataManager.reset();
-            dependentVariableSelected = false;
-            int depVarSelection = 0;
-            columnSelected = false;
-            selectedData = false;
-            dataLoaded = false;
-            lineCalculated = false;
-            this->plottedPoints.clear();
+            resetData();
         }
         std::string fPath;
         std::string fSelected;
@@ -110,6 +102,78 @@ void LinReg::drawDataWindow() {
     // Prompt for Dependent Variable
     if (!dependentVariableSelected) 
     {
+        drawDepVarPrompt();
+    }
+    // Enable/Disable Columns
+    else if (!columnSelected) {
+        drawIndVarPrompt();
+    }
+    else if (dataLoaded) 
+    {
+        /* Enable Plot Checklist */
+        
+        ImGui::Text("View Plots");
+        if (ImGui::BeginTable("Plot Cols", 5)) {
+            for (int i = 0; i < dataManager.getTotalCols(); i++) {
+                ImGui::TableNextColumn();
+                ImGui::Checkbox(dataManager.cols[i].c_str(), (bool*) &plottedCols[i]);
+            }
+            ImGui::EndTable();
+        }
+
+        /* Independent variable & Dependent Variable Plot */
+        for (int i = 0; i < dataManager.getTotalCols(); i++) {
+            if (!plottedCols[i]) {
+                continue;
+            }
+            const float* lineData = nullptr;
+            if (lineCalculated) {
+                lineData = &plottedPoints[0];
+            }
+            const char* title = (dataManager.cols[i] + " and " + dataManager.dependentName).c_str();
+            drawPlot(title, dataManager.cols[i].c_str(), dataManager.dependentName.c_str(), 
+                    dataManager.dependentName.c_str(), &dataManager.data[i][0], 
+                    &dataManager.dependentData[0], "H(x)", lineData, dataManager.dependentData.size());
+                // Create Buttons
+                if (ImGui::BeginTable("Enabled Columns", 5)) {
+                ImGui::TableNextColumn();
+                ImGui::Checkbox("Enabled", &dataManager.addedTraits[i].enabled_linear);
+                ImGui::TableNextColumn();
+                ImGui::Checkbox("Mean Normalization", &dataManager.addedTraits[i].meanNormalization);
+                ImGui::TableNextColumn();
+                ImGui::Checkbox("Squared", &dataManager.addedTraits[i].squared);
+                ImGui::TableNextColumn();
+                ImGui::Checkbox("Cubic", &dataManager.addedTraits[i].cubed);
+                ImGui::TableNextColumn();
+                ImGui::Checkbox("Sqrt", &dataManager.addedTraits[i].sqrt);
+                ImGui::EndTable();
+            }
+        }
+
+        if (ImGui::Button("Apply Extra Features")) {
+            dataManager.applyTraits();
+        }
+
+        // Plot nth row and Y
+        if (lineCalculated) {
+            drawPlot("Prediction Plot", "Data Index", dataManager.dependentName.c_str(), 
+                    dataManager.dependentName.c_str(), &outputX[0], 
+                    &dataManager.dependentData[0], "H(x)", &plottedPoints[0], 
+                    dataManager.dependentData.size());
+        }
+        
+        // Linear Regression Button
+        bool linRegButton = ImGui::Button("Start Regression");
+        if (linRegButton) {
+            basicLinearRegression(0.001);
+        }
+        if (leastSquaresError != -1) {
+            ImGui::Text("Error: %f", leastSquaresError);
+        }
+    }
+    ImGui::End();
+}
+void LinReg::drawDepVarPrompt() {
         selectedData = false;
         ImGui::Text("Select Dependent Variable");
         if (ImGui::BeginListBox(""))
@@ -127,89 +191,62 @@ void LinReg::drawDataWindow() {
         selectedData = ImGui::Button("Done");
         dependentVariableSelected = selectedData;
         dataManager.dependentCol = depVarSelection;
-    }
-    // Enable/Disable Columns
-    else if (!columnSelected) {
-        selectedData = false;
-        ImGui::Text("Select Independent Variables (numerical data)");
-        if (ImGui::BeginTable("Enabled Columns", 5)) {
-            for (int i = 0; i < dataManager.getTotalCols(); i++) {
-                if (i == depVarSelection) continue;
-                ImGui::TableNextColumn();
-                ImGui::Checkbox(dataManager.cols[i].c_str(), &dataManager.enabledCols[i]);
-            }
-            ImGui::EndTable();
-            selectedData = ImGui::Button("Done");
-            columnSelected = selectedData;
-            if (selectedData) {
-                // Load in CSV now
-                if (dataManager.loadCSV()) {
-                    dataLoaded = true;
-                    plottedCols.resize(dataManager.cols.size(), false); // plot enable data
-                }
+}
+
+void LinReg::drawIndVarPrompt() {
+    selectedData = false;
+    ImGui::Text("Select Independent Variables (numerical data)");
+    if (ImGui::BeginTable("Enabled Columns", 5)) {
+        for (int i = 0; i < dataManager.getTotalCols(); i++) {
+            if (i == depVarSelection) continue;
+            ImGui::TableNextColumn();
+            ImGui::Checkbox(dataManager.cols[i].c_str(), &dataManager.enabledCols[i]);
+        }
+        ImGui::EndTable();
+        selectedData = ImGui::Button("Done");
+        columnSelected = selectedData;
+        if (selectedData) {
+            // Load in CSV now
+            if (dataManager.loadCSV()) {
+                dataLoaded = true;
+                plottedCols.resize(dataManager.cols.size(), false); // plot enable data
             }
         }
     }
-    else if (dataLoaded) 
-    {
-        ImGui::Text("View Plots");
-        if (ImGui::BeginTable("Plot Cols", 5)) {
-            for (int i = 0; i < dataManager.cols.size(); i++) {
-                ImGui::TableNextColumn();
-                ImGui::Checkbox(dataManager.cols[i].c_str(), (bool*) &plottedCols[i]);
-            }
-            ImGui::EndTable();
-        }
+}
 
-        for (int i = 0; i < dataManager.cols.size(); i++) {
-            if (!plottedCols[i]) {
-                continue;
-            }
-            if (ImPlot::BeginPlot(dataManager.cols[i].c_str())) {
-                ImPlot::SetupAxes(dataManager.cols[i].c_str(),
-                    dataManager.dependentName.c_str(),
-                    ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
-                    ImPlotAxisFlags_RangeFit);
-                ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
-                ImPlot::PlotScatter(dataManager.cols[i].c_str(), 
-                    &dataManager.data[i][0], 
-                    &dataManager.dependentData[0],
-                    dataManager.dependentData.size());
-                ImPlot::PopStyleVar();
-                if (lineCalculated){
-                    ImPlot::PlotLine("Prediction", &dataManager.data[i][0], &plottedPoints[0], dataManager.dependentData.size());
-                }
-                ImPlot::EndPlot();  
-            }
-        }
-        // Plot 3rd Output Plot
-        if (lineCalculated) {
-            if (ImPlot::BeginPlot("Prediction Plot")) {
-                ImPlot::SetupAxes("Data Index",
-                    dataManager.dependentName.c_str(),
-                    ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
-                    ImPlotAxisFlags_RangeFit);
-                ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
-                ImPlot::PlotScatter(dataManager.dependentName.c_str(), 
-                    &outputX[0],
-                    &dataManager.dependentData[0],
-                    dataManager.dependentData.size());
-                ImPlot::PopStyleVar();
-                    ImPlot::PlotLine("Prediction", &outputX[0], &plottedPoints[0], dataManager.dependentData.size());
-                ImPlot::EndPlot();  
-            }
-        }
-        // Linear Regression Button
-        bool linRegButton = ImGui::Button("Start Regression");
-        if (linRegButton) {
-            basicLinearRegression(0.001);
-        }
+void LinReg::drawPlot(const char* title, const char* xAxis, 
+    const char* yAxis, const char* scatterName, 
+    const float* xData, const float* yData, const char* lineName, 
+    const float* lineData, int entries) {
+    
 
-
-
+    if (ImPlot::BeginPlot(title)) {
+        ImPlot::SetupAxes(xAxis,
+            yAxis,
+            ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
+            ImPlotAxisFlags_RangeFit);
+        ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
+        ImPlot::PlotScatter(yAxis, 
+            xData, yData, entries);
+        ImPlot::PopStyleVar();
+        if (lineData != nullptr) {
+        ImPlot::PlotLine(lineName, xData, lineData, entries);
+        }
+        ImPlot::EndPlot();  
     }
+}
 
-    ImGui::End();
+void LinReg::resetData() {
+    // Reset datamanager and GUI state
+    dataManager.reset();
+    dependentVariableSelected = false;
+    int depVarSelection = 0;
+    columnSelected = false;
+    selectedData = false;
+    dataLoaded = false;
+    lineCalculated = false;
+    this->plottedPoints.clear();
 }
 
 float LinReg::basicMeanSqError() {
@@ -229,6 +266,7 @@ float LinReg::basicHthetaX(float xIndex) {
     }
     return prediction;
 }
+
 void LinReg::basicLinearRegression(float a_size) {
     thetas = std::vector<float>(dataManager.cols.size()+1, 0.0f);
     std::vector<float> temps = std::vector<float>(dataManager.cols.size()+1, 0.0f);
@@ -246,6 +284,8 @@ void LinReg::basicLinearRegression(float a_size) {
 
         // all other thetas
         for (int i = 1; i < thetas.size(); i++) {   // every feature
+            if (i < dataManager.getTotalCols() && !dataManager.addedTraits[i-1].enabled_linear) continue;
+            
             cost = 0;
             for (int j = 0; j < m; j++) {           // each datapoint
                 cost += (basicHthetaX(j) - dataManager.dependentData[j]) * dataManager.data[i-1][j];
@@ -274,6 +314,7 @@ void LinReg::basicLinearRegression(float a_size) {
         outputX.push_back(i);
     }
     lineCalculated = true;
+    leastSquaresError = error;
 }
 
 

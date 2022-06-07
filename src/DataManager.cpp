@@ -3,7 +3,6 @@
 DataManager::DataManager()
 {
 }
-
 DataManager::~DataManager()
 {
     if (enabledCols != nullptr) {
@@ -11,7 +10,6 @@ DataManager::~DataManager()
         enabledCols = nullptr;
     }
 }
-
 bool DataManager::loadColumns(std::string filePath) {
     if (cols.size() > 0) {
         #ifdef DATAMANAGER_DEBUG
@@ -109,5 +107,62 @@ bool DataManager::loadCSV() {
     }
     csvfile.close();
     cols = newColNames;
+    this->addedTraits = std::vector<DataTrait>(cols.size());
+    this->totalCols = cols.size();
+    // initialize all columns
     return true;
+}
+
+void DataManager::applyTraits() {
+    if (data.size() > totalCols) {
+        cols.erase(cols.begin() + totalCols, cols.end());
+        data.erase(data.begin() + totalCols, data.end());
+    }
+    for (int i = 0; i < totalCols; i++) {
+        relatedFeatures[i] = std::vector<int>();
+        if (addedTraits[i].meanNormalization) {
+            // Mean normalize column
+            mean_normalize(i);
+            for (int j = 0; j < data[i].size(); j++) {
+                std::cout << data[i][j] << ", ";
+            }
+            std::cout << std::endl;
+        }
+        if (addedTraits[i].squared) {
+            cols.push_back(cols[i] + "²-SQUARED");
+            data.push_back(std::vector<float>());
+            add_feature(i, data.back(), [](const float x) {return x * x;});
+            relatedFeatures.find(i)->second.push_back(data.size()-1);
+        }
+        if (addedTraits[i].cubed) {
+            cols.push_back(cols[i] + "³-CUBED");
+            data.push_back(std::vector<float>());
+            add_feature(i, data.back(), [](const float x) {return (float) pow(x,3);});
+            relatedFeatures.find(i)->second.push_back(data.size()-1);
+        }
+    }
+}
+
+void DataManager::mean_normalize(int col) {
+    float mean = 0;
+    float standardDev;
+    mean = std::accumulate(std::begin(data[col]), std::end(data[col]), 0);
+    mean /= data[col].size();
+    for (int i = 0; i < data[col].size(); i++) {
+        standardDev += pow(data[col][i] - mean,2);
+    }
+    standardDev = sqrt(standardDev/data[col].size());
+    // Now we mean normalize >:)
+    for (int i = 0; i < data[col].size(); i++) {
+        float normalizedVal = (data[col][i] - mean) / standardDev;
+        data[col][i] = normalizedVal;
+    }
+}
+
+void DataManager::add_feature(int origin, std::vector<float>& dest, float (*mathFunc)(const float orig)) {
+    dest.clear();
+    dest.resize(data[origin].size());
+    for (int i = 0; i < dest.size(); i++) {
+        dest[i] = mathFunc(data[origin][i]);
+    }
 }

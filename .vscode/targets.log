@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 04 10:46:08 2022
+# Make data base, printed on Mon Jun 06 17:03:03 2022
 
 # Variables
 
@@ -27,7 +27,7 @@ USERPROFILE = C:\Users\epicp
 # environment
 LOCALAPPDATA = C:\Users\epicp\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-cf8ad92a-6d2e-437b-8980-727cd89d4623-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-70e6afda-74dd-43fc-8ea0-25f93b6bd108-sock
 # environment
 VSCODE_CWD = C:\Users\epicp\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -43,7 +43,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10192_OUWPWZFXIHBSPXSU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13716_BSKHKJNCEZVOBULP
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\epicp\OneDrive - purdue.edu
 # environment
@@ -105,7 +105,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 10192
+VSCODE_PID = 13716
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -289,11 +289,12 @@ GNUmakefile:
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 16 / storage = 121 B / avg = 7 B
-# current buf: size = 8174 B / used = 121 B / count = 16 / avg = 7 B
+# current buf: size = 8174 B / used = 121 B / count = 16 / a 
+vg = 7 B
 
 # strcache performance: lookups = 19 / hit rate = 15%
 # hash-table stats:
 # Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Sat Jun 04 10:46:08 2022
+# Finished Make data base on Mon Jun 06 17:03:03 2022
 
  
