@@ -53,6 +53,7 @@ void DataManager::reset() {
     this->cols.clear();
     this->data.clear();
     this->dependentData.clear();
+    this->addedTraits.clear();
     delete[] enabledCols;
     this->enabledCols = nullptr;
 }
@@ -123,10 +124,6 @@ void DataManager::applyTraits() {
         if (addedTraits[i].meanNormalization) {
             // Mean normalize column
             mean_normalize(i);
-            for (int j = 0; j < data[i].size(); j++) {
-                std::cout << data[i][j] << ", ";
-            }
-            std::cout << std::endl;
         }
         if (addedTraits[i].squared) {
             cols.push_back(cols[i] + "²-SQUARED");

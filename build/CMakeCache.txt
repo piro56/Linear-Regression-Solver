@@ -318,7 +318,7 @@ LinReg_SOURCE_DIR:STATIC=C:/Users/epicp/Documents/Programming/Linear-Regression-
 MAKECOMMAND:STRING=C:/msys64/mingw64/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 
 //Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
+MEMORYCHECK_COMMAND:FILEPATH=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/bin/cuda-memcheck.exe
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=

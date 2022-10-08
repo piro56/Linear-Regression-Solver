@@ -35,7 +35,7 @@ public:
 
     std::string dataPath;
 
-    int getTotalCols() { return totalCols; }
+    int getTotalCols() const { return totalCols; }
     bool* enabledCols;
     int dependentCol;
 

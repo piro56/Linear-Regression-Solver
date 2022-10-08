@@ -62,7 +62,14 @@
         "xmemory": "cpp",
         "xstddef": "cpp",
         "xtr1common": "cpp",
+<<<<<<< HEAD
         "xutility": "cpp"
     },
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+=======
+        "xutility": "cpp",
+        "list": "cpp",
+        "xhash": "cpp"
+    }
+>>>>>>> 572808ef6f740ec62933df587b9954a8d25e8e82
 }
