@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/epicp/Documents/Programming/Linear Regression
+# Install script for directory: C:/Users/epicp/Documents/Programming/Linear-Regression-Solver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Linear")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LinReg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/epicp/Documents/Programming/Linear Regression/build/src/cmake_install.cmake")
-  include("C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/cmake_install.cmake")
-  include("C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/cmake_install.cmake")
-  include("C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/cmake_install.cmake")
-  include("C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/cmake_install.cmake")
+  include("C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/cmake_install.cmake")
+  include("C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/cmake_install.cmake")
+  include("C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/cmake_install.cmake")
+  include("C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/cmake_install.cmake")
+  include("C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/cmake_install.cmake")
 
 endif()
 
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/epicp/Documents/Programming/Linear Regression/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,31 +4,30 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/epicp/Documents/Programming/Linear Regression
-BuildDirectory: C:/Users/epicp/Documents/Programming/Linear Regression/build
+SourceDirectory: C:/Users/epicp/Documents/Programming/Linear-Regression-Solver
+BuildDirectory: C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: MSI
+Site: MeetSpaceship
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-make
+BuildName: Win32-mingw32-make
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
 SubmitURL: http://
-SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "D:/C++/CMake/bin/cmake.exe" "C:/Users/epicp/Documents/Programming/Linear Regression"
-MakeCommand: D:/C++/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "C:/msys64/mingw64/bin/cmake.exe" "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver"
+MakeCommand: C:/msys64/mingw64/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control

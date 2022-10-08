@@ -1,5 +1,5 @@
 dep/GLAD/CMakeFiles/glad.dir/include/glad.c.obj: \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/glad.c \
+ C:\Users\epicp\Documents\Programming\Linear-Regression-Solver\dep\GLAD\include\glad.c \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/corecrt.h \
@@ -23,8 +23,8 @@ dep/GLAD/CMakeFiles/glad.dir/include/glad.c.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/errno.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/glad/glad.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/KHR/khrplatform.h \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/glad/glad.h \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/KHR/khrplatform.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \

@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\LinReg.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\LinReg.dir/objects.a @CMakeFiles\LinReg.dir\objects1.rsp
+C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\LinReg.dir/objects.a -Wl,--no-whole-archive -o LinReg.exe -Wl,--out-implib,libLinReg.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LinReg.dir\linklibs.rsp

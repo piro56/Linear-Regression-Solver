@@ -1,8 +1,8 @@
 dep/SimpleGL/CMakeFiles/SimpleGL.dir/src/ShaderManager.cpp.obj: \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/SimpleGL/src/ShaderManager.cpp \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/SimpleGL/include/ShaderManager.hpp \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/glad/glad.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/KHR/khrplatform.h \
+ C:\Users\epicp\Documents\Programming\Linear-Regression-Solver\dep\SimpleGL\src\ShaderManager.cpp \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/include/ShaderManager.hpp \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/glad/glad.h \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/KHR/khrplatform.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
@@ -14,7 +14,7 @@ dep/SimpleGL/CMakeFiles/SimpleGL.dir/src/ShaderManager.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/SimpleGL/include/ShaderProgram.hpp \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/include/ShaderProgram.hpp \
  C:/msys64/mingw64/include/c++/10.3.0/string \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/os_defines.h \

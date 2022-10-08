@@ -1,64 +1,64 @@
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/Experimental.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/Nightly.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/Continuous.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyMemoryCheck.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyStart.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyUpdate.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyConfigure.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyBuild.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyTest.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyCoverage.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlyMemCheck.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/NightlySubmit.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalStart.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalUpdate.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalConfigure.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalBuild.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalTest.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalCoverage.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalMemCheck.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ExperimentalSubmit.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousStart.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousUpdate.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousConfigure.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousBuild.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousTest.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousCoverage.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousMemCheck.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/ContinuousSubmit.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/package.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/package_source.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/test.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/edit_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/CMakeFiles/rebuild_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/LinReg.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/copy_assets.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/package.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/package_source.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/test.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/edit_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/src/CMakeFiles/rebuild_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/CMakeFiles/SimpleGL.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/CMakeFiles/package.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/CMakeFiles/package_source.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/CMakeFiles/test.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/CMakeFiles/edit_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL/CMakeFiles/rebuild_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/CMakeFiles/imgui.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/CMakeFiles/package.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/CMakeFiles/package_source.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/CMakeFiles/test.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/CMakeFiles/edit_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI/CMakeFiles/rebuild_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/CMakeFiles/implot.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/CMakeFiles/package.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/CMakeFiles/package_source.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/CMakeFiles/test.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/CMakeFiles/edit_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT/CMakeFiles/rebuild_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/CMakeFiles/glad.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/CMakeFiles/package.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/CMakeFiles/package_source.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/CMakeFiles/test.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/CMakeFiles/edit_cache.dir
-C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/test.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/package_source.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/edit_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyMemCheck.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyTest.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousConfigure.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousBuild.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyConfigure.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalTest.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousUpdate.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyUpdate.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalMemCheck.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalSubmit.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/Experimental.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousCoverage.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalConfigure.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/Continuous.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/Nightly.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlySubmit.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyStart.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalCoverage.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyCoverage.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalStart.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalUpdate.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousStart.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousMemCheck.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousTest.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ContinuousSubmit.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/NightlyBuild.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/ExperimentalBuild.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/CMakeFiles/package.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/edit_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/test.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/package.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/copy_assets.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/package_source.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src/CMakeFiles/LinReg.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/CMakeFiles/edit_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/CMakeFiles/test.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/CMakeFiles/package_source.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/CMakeFiles/package.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL/CMakeFiles/SimpleGL.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/CMakeFiles/edit_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/CMakeFiles/test.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/CMakeFiles/package_source.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/CMakeFiles/package.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI/CMakeFiles/imgui.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/CMakeFiles/edit_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/CMakeFiles/test.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/CMakeFiles/package_source.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/CMakeFiles/package.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT/CMakeFiles/implot.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/CMakeFiles/edit_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/CMakeFiles/test.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/CMakeFiles/package_source.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/CMakeFiles/rebuild_cache.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/CMakeFiles/package.dir
+C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD/CMakeFiles/glad.dir

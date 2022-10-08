@@ -1,112 +1,112 @@
 [
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/src",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles/LinReg.dir/main.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/src/main.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/src/main.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles\\LinReg.dir\\main.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\src\\main.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/src/main.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/src",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles/LinReg.dir/WindowFuncs.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/src/WindowFuncs.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/src/WindowFuncs.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles\\LinReg.dir\\WindowFuncs.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\src\\WindowFuncs.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/src/WindowFuncs.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/src",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles/LinReg.dir/LinReg.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/src/LinReg.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/src/LinReg.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles\\LinReg.dir\\LinReg.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\src\\LinReg.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/src/LinReg.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/src",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles/LinReg.dir/DataManager.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/src/DataManager.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/src",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/LinReg.dir/includes_CXX.rsp -g -o CMakeFiles\\LinReg.dir\\DataManager.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\src\\DataManager.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/src/DataManager.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/BufferObject.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/BufferObject.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/BufferObject.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\BufferObject.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\BufferObject.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/BufferObject.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/SGLEngine.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/SGLEngine.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/SGLEngine.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\SGLEngine.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\SGLEngine.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/SGLEngine.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/SGLRect.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/SGLRect.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/SGLRect.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\SGLRect.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\SGLRect.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/SGLRect.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/ShaderManager.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/ShaderManager.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/ShaderManager.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\ShaderManager.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\ShaderManager.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/ShaderManager.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/ShaderProgram.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/ShaderProgram.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/ShaderProgram.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\ShaderProgram.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\ShaderProgram.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/ShaderProgram.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/Triangle.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/Triangle.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/Triangle.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\Triangle.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\Triangle.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/Triangle.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/SimpleGL",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles/SimpleGL.dir/src/VertexArray.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/VertexArray.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/SimpleGL/src/VertexArray.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/SimpleGL",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/SimpleGL.dir/includes_CXX.rsp -g -o CMakeFiles\\SimpleGL.dir\\src\\VertexArray.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\SimpleGL\\src\\VertexArray.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/src/VertexArray.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui_demo.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_demo.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_demo.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui_demo.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui_demo.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui_demo.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui_draw.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_draw.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_draw.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui_draw.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui_draw.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui_draw.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_impl_glfw.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_impl_glfw.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui_impl_glfw.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui_impl_glfw.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui_impl_glfw.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_impl_opengl3.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_impl_opengl3.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui_impl_opengl3.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui_impl_opengl3.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui_impl_opengl3.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui_tables.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_tables.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_tables.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui_tables.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui_tables.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui_tables.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMGUI",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles/imgui.dir/imgui_widgets.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_widgets.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI/imgui_widgets.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMGUI",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -g -o CMakeFiles\\imgui.dir\\imgui_widgets.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMGUI\\imgui_widgets.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI/imgui_widgets.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/implot.dir/includes_CXX.rsp -g -o CMakeFiles/implot.dir/implot.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/implot.dir/includes_CXX.rsp -g -o CMakeFiles\\implot.dir\\implot.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMPLOT\\implot.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMPLOT/implot.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/implot.dir/includes_CXX.rsp -g -o CMakeFiles/implot.dir/implot_demo.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot_demo.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot_demo.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/implot.dir/includes_CXX.rsp -g -o CMakeFiles\\implot.dir\\implot_demo.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMPLOT\\implot_demo.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMPLOT/implot_demo.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/IMPLOT",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/implot.dir/includes_CXX.rsp -g -o CMakeFiles/implot.dir/implot_items.cpp.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot_items.cpp\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMPLOT/implot_items.cpp"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/IMPLOT",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/implot.dir/includes_CXX.rsp -g -o CMakeFiles\\implot.dir\\implot_items.cpp.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\IMPLOT\\implot_items.cpp",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMPLOT/implot_items.cpp"
 },
 {
-  "directory": "C:/Users/epicp/Documents/Programming/Linear Regression/build/dep/GLAD",
-  "command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-gcc.exe  @CMakeFiles/glad.dir/includes_C.rsp -g -o CMakeFiles/glad.dir/include/glad.c.obj -c \"C:/Users/epicp/Documents/Programming/Linear Regression/dep/GLAD/include/glad.c\"",
-  "file": "C:/Users/epicp/Documents/Programming/Linear Regression/dep/GLAD/include/glad.c"
+  "directory": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/build/dep/GLAD",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/glad.dir/includes_C.rsp -g -o CMakeFiles\\glad.dir\\include\\glad.c.obj -c C:\\Users\\epicp\\Documents\\Programming\\Linear-Regression-Solver\\dep\\GLAD\\include\\glad.c",
+  "file": "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/glad.c"
 }
 ]

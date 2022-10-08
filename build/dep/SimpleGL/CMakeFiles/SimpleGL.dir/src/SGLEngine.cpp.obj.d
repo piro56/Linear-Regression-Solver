@@ -1,6 +1,6 @@
 dep/SimpleGL/CMakeFiles/SimpleGL.dir/src/SGLEngine.cpp.obj: \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/SimpleGL/src/SGLEngine.cpp \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/SimpleGL/include/SGLEngine.hpp \
+ C:\Users\epicp\Documents\Programming\Linear-Regression-Solver\dep\SimpleGL\src\SGLEngine.cpp \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/SimpleGL/include/SGLEngine.hpp \
  C:/msys64/mingw64/include/c++/10.3.0/iostream \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/10.3.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -136,6 +136,6 @@ dep/SimpleGL/CMakeFiles/SimpleGL.dir/src/SGLEngine.cpp.obj: \
  C:/msys64/mingw64/include/c++/10.3.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/10.3.0/istream \
  C:/msys64/mingw64/include/c++/10.3.0/bits/istream.tcc \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/glad/glad.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLAD/include/KHR/khrplatform.h \
- C:/Users/epicp/Documents/Programming/Linear\ Regression/dep/GLFW/include/glfw3.h
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/glad/glad.h \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/KHR/khrplatform.h \
+ C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLFW/include/glfw3.h

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/epicp/Documents/Programming/Linear Regression/dep/IMGUI
+# Install script for directory: C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/IMGUI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Linear")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LinReg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

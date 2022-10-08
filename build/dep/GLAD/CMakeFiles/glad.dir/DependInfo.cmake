@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/epicp/Documents/Programming/Linear Regression/dep/GLAD/include/glad.c" "dep/GLAD/CMakeFiles/glad.dir/include/glad.c.obj" "gcc" "dep/GLAD/CMakeFiles/glad.dir/include/glad.c.obj.d"
+  "C:/Users/epicp/Documents/Programming/Linear-Regression-Solver/dep/GLAD/include/glad.c" "dep/GLAD/CMakeFiles/glad.dir/include/glad.c.obj" "gcc" "dep/GLAD/CMakeFiles/glad.dir/include/glad.c.obj.d"
   )
 
 # Targets to which this target links.
