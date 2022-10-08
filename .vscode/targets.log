@@ -8,12 +8,10 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 06 17:03:03 2022
+# Make data base, printed on Sat Oct 08 19:09:58 2022
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -26,8 +24,6 @@ LC_ALL = C
 USERPROFILE = C:\Users\epicp
 # environment
 LOCALAPPDATA = C:\Users\epicp\AppData\Local
-# environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-70e6afda-74dd-43fc-8ea0-25f93b6bd108-sock
 # environment
 VSCODE_CWD = C:\Users\epicp\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -43,11 +39,9 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13716_BSKHKJNCEZVOBULP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2984_FGEGLBRDAEHXCIPX
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\epicp\OneDrive - purdue.edu
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -56,12 +50,10 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\epicp\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = C:\Users\epicp\AppData\Roaming\Code\CachedData\64bbfbf67ada9953918d72e1df2f4d8e537d340e
 # environment
 LANG = C
 # default
@@ -83,8 +75,6 @@ INTELLIJ IDEA COMMUNITY EDITION = C:\Program Files\JetBrains\IntelliJ IDEA Commu
 # makefile
 CURDIR := c:/Users/epicp/Documents/Programming/Linear Regression
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
@@ -103,9 +93,9 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
+VSCODE_PID = 2984
 # environment
-VSCODE_PID = 13716
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -135,7 +125,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\National Instruments\Shared\OpenVINO\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Java\jre1.8.0_241;C:\Program Files (x86)\Java\jre1.8.0_241\bin\java;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\C++\CMake\bin;C:\msys64\mingw64\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\epicp\AppData\Local\Microsoft\WindowsApps;C:\Users\epicp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\epicp\AppData\Local\atom\bin;C:\Users\epicp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\bin;;C:\Users\epicp\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-17.0.1\bin;C:\msys64\mingw64\bin;C:\Users\epicp\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.2\bin;
+PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\libnvvp;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\National Instruments\Shared\OpenVINO\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Java\jre1.8.0_241;C:\Program Files (x86)\Java\jre1.8.0_241\bin\java;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\C++\CMake\bin;C:\msys64\mingw64\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\epicp\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.2.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Anaconda3\Scripts\;C:\Users\epicp\anaconda3\Library\bin\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\OpenSSL-Win64\bin;C:\Users\epicp\AppData\Local\Microsoft\WindowsApps;C:\Users\epicp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\epicp\AppData\Local\atom\bin;C:\Users\epicp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\bin;;C:\Users\epicp\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-17.0.1\bin;C:\msys64\mingw64\bin;C:\Users\epicp\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.2\bin;;C:\Users\epicp\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\NASM;C:\Users\epicp\.dotnet\tools;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Scripts;
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -149,11 +139,13 @@ NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\External
 # environment
 PROMPT = $P$G
 # environment
+OPENSSL_CONF = C:\OpenSSL-Win64\bin\openssl.cfg
+# environment
 CHOCOLATEYLASTPATHUPDATE = 132772555889667475
 # environment
-LOGONSERVER = \\MSI
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
 # environment
-VSCODE_LOG_NATIVE = false
+LOGONSERVER = \\MSI
 # environment
 USERNAME = epicp
 # environment
@@ -176,6 +168,10 @@ GNUMAKEFLAGS :=
 OS = Windows_NT
 # makefile
 .DEFAULT_GOAL := 
+# environment
+NVM_HOME = C:\Users\epicp\AppData\Roaming\nvm
+# environment
+CUDA_PATH_V11_7 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -191,6 +187,8 @@ APPDATA = C:\Users\epicp\AppData\Roaming
 # environment
 HOMEDRIVE = C:
 # environment
+NVM_SYMLINK = C:\Program Files\nodejs
+# environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.2\bin;
@@ -203,7 +201,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\epicp\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\deb0cb07c184dc018739c9dd5257afb8-1.67.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\deb0cb07c184dc018739c9dd5257afb8-1.72.0-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -221,7 +219,7 @@ PROCESSOR_REVISION = 9e0a
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=9/128=7%
+# Load=103/1024=10%, Rehash=0, Collisions=8/127=6%
 
 # Pattern-specific Variable Values
 
@@ -229,9 +227,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/epicp/Documents/Programming/Linear Regression, mtime 1654304773): 9 files, no impossibilities.
+# . (key c:/Users/epicp/Documents/Programming/Linear Regression, mtime 1654571570): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -288,13 +286,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 121 B / avg = 7 B
-# current buf: size = 8174 B / used = 121 B / count = 16 / a 
-vg = 7 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 131 B / avg = 7 B
+# current buf: size = 8174 B / used = 131 B / count = 17 / avg = 7 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Mon Jun 06 17:03:03 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
+# Finished Make data base on Sat Oct 08 19:09:58 2022
 
  

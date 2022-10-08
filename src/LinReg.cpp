@@ -135,7 +135,7 @@ void LinReg::drawDataWindow() {
                     dataManager.dependentName.c_str(), &dataManager.data[i][0], 
                     &dataManager.dependentData[0], "H(x)", lineData, dataManager.dependentData.size());
                 // Create Buttons
-                if (ImGui::BeginTable("Enabled Columns", 5)) {
+            if (ImGui::BeginTable("Enabled Columns", 5)) {
                 ImGui::TableNextColumn();
                 ImGui::Checkbox("Enabled", &dataManager.addedTraits[i].enabled_linear);
                 ImGui::TableNextColumn();
@@ -222,10 +222,12 @@ void LinReg::drawPlot(const char* title, const char* xAxis,
     
 
     if (ImPlot::BeginPlot(title)) {
+        // ImPlot::SetupAxes(xAxis,
+        //     yAxis,
+        //     ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
+        //     ImPlotAxisFlags_RangeFit);
         ImPlot::SetupAxes(xAxis,
-            yAxis,
-            ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale|
-            ImPlotAxisFlags_RangeFit);
+            yAxis, ImPlotAxisFlags_AutoFit|ImPlotAxisFlags_LogScale);
         ImPlot::PushStyleVar(ImPlotStyleVar_FillAlpha, 0.25f);
         ImPlot::PlotScatter(yAxis, 
             xData, yData, entries);
@@ -294,10 +296,6 @@ void LinReg::basicLinearRegression(float a_size) {
         }
         thetas = temps;
         float nErr = basicMeanSqError();
-        // std::cout << "ERROR: " << nErr << "with " << std::endl;
-        // for (int i = 0; i < thetas.size(); i++) {
-        //     std::cout << "T" << i << ": " << thetas[i] << std::endl;
-        // }
         if (nErr >= error) {
             std::cout << "FINAL ERROR: " << nErr << "with " << std::endl;
             for (int i = 0; i < thetas.size(); i++) {
